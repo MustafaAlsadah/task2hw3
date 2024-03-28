@@ -1,0 +1,60 @@
+swagger: "2.0"
+info:
+  title: task2
+  description: task2api
+  version: 1.0.0
+
+host: task2.apigateway.coe453hw3.cloud.goog
+basePath: /
+schemes:
+  - https
+  - http
+
+paths:
+  /add:
+    post:
+      operationId: postAddContainer
+      summary: cldrn add
+      produces:
+        - application/json
+      responses:
+        200:
+          description: OK
+      x-google-backend:
+        address: https://add-ehcezrye6a-uc.a.run.app
+
+  /div:
+    post:
+      operationId: postDivContainer
+      summary: cldrn div
+      produces:
+        - application/json
+      responses:
+        200:
+          description: OK
+      x-google-backend:
+        address: https://div-ehcezrye6a-uc.a.run.app
+
+  /mul:
+    post:
+      operationId: postMulContainer
+      summary: cldrn mul
+      produces:
+        - application/json
+      responses:
+        200:
+          description: OK
+      x-google-backend:
+        address: https://mul-ehcezrye6a-uc.a.run.app
+
+  /sub:
+    post:
+      operationId: postSubContainer
+      summary: cldrn sub
+      produces:
+        - application/json
+      responses:
+        200:
+          description: OK
+      x-google-backend:
+        address: https://sub-ehcezrye6a-uc.a.run.app
